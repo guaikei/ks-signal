@@ -6,6 +6,11 @@ name: ks-signal
 description: "快手公开数据异动信号（只读）：关键词搜视频、博主作品与粉丝数据、视频评论，输出 JSON，不登录不发布。触发词：快手、Kuaishou、kwai、快手搜索、快手评论、快手博主。用户要查快手视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "快手异动信号｜互动突增·爆款冒头·评论激增·数据波动"
+display_name_en: "Kuaishou Signal"
+description_zh: "快手异动信号：基于快手公开数据的只读监测接口，支持关键词搜索视频（最多点赞/最新发布排序）、博主作品与互动数据监控、视频评论抓取三类采集，并对同一作品的多次抓取结果做对比分析，识别互动数突增的爆款冒头、评论激增与数据异常波动，输出结构化 JSON（含标题、作者、点赞/评论/收藏/分享、标签、链接、发布时间），可直接导入 Excel/BI 或交给 AI 生成选题库、竞品对比、KOL 筛选与舆情风险提示。按量 Token 单次最多 10000 条；包月 Token 搜索最多 30、作品最多 50、评论最多 60，超限退出码 1（PLAN_LIMIT）。零第三方依赖，Node.js 16.14+ 内置模块直接运行；需配置环境变量 GUAIKEI_API_TOKEN（可通过 www.guaikei.com 开通获取）。不登录、不发布、不点赞、不评论，无封号风险。"
+description_en: "Kuaishou public-data anomaly signal skill: keyword search for videos (sort by most likes or newest), creator post feeds with engagement stats, and comment scraping; compares repeated captures of the same work to surface engagement spikes, rising viral hits, surging comments, and abnormal data swings. Outputs structured JSON (title, author, digg/comment/share/collect counts, tags, links, publish time) ready for Excel/BI or AI-driven topic libraries, competitor monitoring, KOL screening and reputation alerts. Pay-as-you-go tokens up to 10000 items per run; monthly tokens limited to 30 for search, 50 for posts and 60 for comments, exceeding the plan limit exits with code 1 (PLAN_LIMIT). Zero third-party dependencies, runs on Node.js 16.14+ built-ins only; requires the GUAIKEI_API_TOKEN environment variable (available via www.guaikei.com). Read-only and login-free: no posting, liking, or commenting, no account-ban risk."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "📷"
